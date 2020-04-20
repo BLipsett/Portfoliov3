@@ -1,0 +1,145 @@
+body.index {
+	background-image: url("blemProf.jpg");
+	background-size: 100%;
+	padding: 2em;
+}
+
+body {
+	background-color: #212121;
+	padding: 2em;
+}
+
+div.cardBois {
+	padding-top: 12em;
+}
+
+nav.topNav {
+	background-color: transparent;
+	box-shadow: none;
+	color: #d4b6b6;
+}
+
+div.mainBio {
+	position: relative;
+	left: 543px;
+	top: 313px;
+	overflow: hidden;
+	width: 508px;
+	height: 380px;
+	text-align: left;
+	font-family: Bodoni URW;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: #cd8080;
+}
+
+#nav-mobile li a {
+	color: #d4b6b6;
+	font-family: itc-avant-garde-gothic-pro, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+div.right div.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) s both;
+	animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) s both;
+}
+
+div.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+	animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+	0% {
+		-webkit-transform: translateY(1000px);
+		transform: translateY(1000px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-bottom {
+	0% {
+		-webkit-transform: translateY(1000px);
+		transform: translateY(1000px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.links h1 a  {
+	font-family: itc-avant-garde-gothic-pro, sans-serif;
+	position: relative;
+	top: 4em;
+	left: 4em;
+	color: #d4b6b6;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	cursor: pointer;
+	position: relative;
+	padding: 10px 20px;
+	background: white;
+	font-size: 55px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	transition: all 1s;
+	&:after,
+	&:before {
+		content: " ";
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		border: 0px solid #fff;
+		transition: all 1s;
+	}
+	&:after {
+		top: -1px;
+		left: -1px;
+		border-top: 5px solid black;
+		border-left: 5px solid black;
+	}
+	&:before {
+		bottom: -1px;
+		right: -1px;
+		border-bottom: 5px solid black;
+		border-right: 5px solid black;
+	}
+	&:hover {
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		// background:rgba(0,0,0,.5);
+		// color:white;
+		&:before,
+		&:after {
+			width: 100%;
+			height: 100%;
+			// border-color:white;
+		}
+	}
+}
+
+.data-container {
+	background: #ffebee;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
