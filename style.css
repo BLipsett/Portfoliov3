@@ -144,4 +144,10 @@ section p {
   color: #d4b6b6;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("blemProf-min.jpg");
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
