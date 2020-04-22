@@ -1,7 +1,11 @@
 body.index {
   background-image: url("blemProf.jpg");
-  background-size: 100%;
   padding: 2em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #212121;
 }
 
 body {
@@ -78,61 +82,66 @@ div.slide-in-bottom {
 .links h1 a {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
   position: relative;
-  top: 4em;
+  top: 2em;
   left: 4em;
   color: #d4b6b6;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 2em;
 }
 
-.btn {
+section .btn {
+  height: 30px;
   cursor: pointer;
   position: relative;
-  padding: 10px 20px;
+  padding: 4px 20px;
   background: white;
-  font-size: 55px;
+  font-size: 60px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   transition: all 1s;
+  background-color: transparent;
+  box-shadow: none;
 }
-.btn:after, .btn:before {
+section .btn:after, section .btn:before {
   content: " ";
-  width: 10px;
+  width: 30px;
   height: 10px;
   position: absolute;
   border: 0px solid #fff;
   transition: all 1s;
 }
-.btn:after {
+section .btn:after {
   top: -1px;
   left: -1px;
   border-top: 5px solid black;
   border-left: 5px solid black;
 }
-.btn:before {
+section .btn:before {
   bottom: -1px;
   right: -1px;
   border-bottom: 5px solid black;
   border-right: 5px solid black;
 }
-.btn:hover {
+section .btn:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-.btn:hover:before, .btn:hover:after {
+section .btn:hover:before, section .btn:hover:after {
   width: 100%;
   height: 100%;
+  background-color: transparent;
 }
 
-.data-container {
-  background: #ffebee;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section p {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-size: 24px;
+  color: #d4b6b6;
 }
 
 /*# sourceMappingURL=style.css.map */
