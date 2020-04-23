@@ -1,5 +1,5 @@
 body.index {
-	background-image: url("blemProf.jpg");
+
 	padding: 2em;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -157,8 +157,22 @@ section p {
 	color: #d4b6b6;
 }
 
-@media only screen and (max-width: 767px) {
-	body {
-		background-image: url("blemProf-min.jpg");
+@media only screen and (max-width: 2000px) and (min-width: 767px) {
+	body.index {
+		background-image: url("/images/blemProf.jpg");;
+		background-color: #cd8080;
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 415px) {
+	body.index {
+		background-image: url("/images/duckboiMobile.jpg");
+		background-color: #cd8080;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	body.index {
+		background-color: #cd8080;
 	}
 }
