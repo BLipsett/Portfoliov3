@@ -1,5 +1,5 @@
 body.index {
-  background-image: url("blemProf.jpg");
+  background-image: url("/images/blemProf.jpg");
   padding: 2em;
   background-position: center center;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ div.slide-in-bottom {
   0% {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -71,7 +71,7 @@ div.slide-in-bottom {
   0% {
     -webkit-transform: translateY(1000px);
     transform: translateY(1000px);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(0);
