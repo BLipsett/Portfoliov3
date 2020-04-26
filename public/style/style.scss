@@ -6,6 +6,9 @@ body.index {
   background-size: cover;
   background-color: #212121;
 }
+div.container {
+	width: 100%;
+}
 
 body {
   background-color: #212121;
@@ -23,13 +26,9 @@ nav.topNav {
 }
 
 div.mainBio {
-  position: relative;
-  left: 543px;
-  top: 313px;
-  overflow: hidden;
-  width: 508px;
-  height: 380px;
-  text-align: left;
+  text-align-last: center;
+  display: block;
+  padding-top: 8rem;
   font-family: Bodoni URW;
   font-style: normal;
   font-weight: bold;
