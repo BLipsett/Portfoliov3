@@ -7,38 +7,48 @@
     <link rel="stylesheet" href="/public/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/yfb4rqx.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Compiled and minified JavaScript -->
 
     <title>Brian Lipsett</title>
 </head>
 
 
-<body>
-    <header>
+<body class="index">
+    <div class="container">
         <nav class="topNav">
-            <a class="brand-logo" href="index.html">
-                    <div class="logo-image">
-                        <img src="/Group 2.svg" class="img-fluid">
-                    </div>
-                </a>
+            <div class="nav-wrapper">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a class="bLip" href="index.html">
+                        <div class="logo-image">
+                            <img src="/Group 2.svg" class="img-fluid">
+                        </div>
+                    </a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/public/projects.html">Projects</a></li>
-                    <li><a href="/public/passions.html">Passions</a></li>
-                    <li><a href="/public/contact.html">Contact</a></li>
-                </ul>
-           
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./passions.html">Passions</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
         </nav>
-        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./passions.html">Passions</a></li>
+            <li><a href="./contact.html">Contact</a></li>
 
-    </header>
+    </div>
     <section>
         <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 
         </p>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/public/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script></body>
 
 </html>

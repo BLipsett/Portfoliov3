@@ -137,6 +137,30 @@ section .btn:hover:before, section .btn:hover:after {
   background-color: transparent;
 }
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: black;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 section p {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
   font-size: 24px;
@@ -152,12 +176,47 @@ section p {
 @media only screen and (max-width: 767px) and (min-width: 415px) {
   body.index {
     background-image: url("/images/duckboiMobile.jpg");
-    background-color: #cd8080;
+    background-color: #343030;
   }
 }
 @media only screen and (max-width: 415px) {
-  body.index {
-    background-color: #cd8080;
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #212121;
+    max-width: fit-content;
+  }
+  body img.img-fluid {
+    width: 15rem;
+  }
+  body .container {
+    max-width: fit-content;
+    margin: 0;
+  }
+  body .mainBio {
+    position: inherit;
+    width: fit-content;
+  }
+  body nav.topNav .right {
+    float: right;
+  }
+  body nav.topNav .nav-wrapper {
+    display: flex;
+  }
+  body nav.topNav a.sidenav-trigger {
+    float: right;
+  }
+  body nav.topNav a.bLip {
+    size: 6rem;
+  }
+  body section.links h1 a {
+    max-width: fit-content;
+    position: relative;
+    top: 0em;
+    left: 9rem;
+    padding: 15px;
+    writing-mode: vertical-lr;
+    display: inline-table;
   }
 }
 
